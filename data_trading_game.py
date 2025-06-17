@@ -11,19 +11,17 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['savefig.transparent'] = False
 import matplotlib.pyplot as plt
-# 设置中文字体
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
-plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
-# 放大字体、加粗设置
+plt.rcParams['font.sans-serif'] = ['SimHei']  
+plt.rcParams['axes.unicode_minus'] = False 
 plt.rcParams.update({
-    'font.size': 14,            # 所有文字默认大小
-    'axes.labelsize': 18,       # 坐标轴标题字号
-    'axes.labelweight': 'bold', # 坐标轴标题加粗
-    'axes.titlesize': 18,       # 子图标题字号
-    'xtick.labelsize': 14,      # 横坐标刻度字号
-    'ytick.labelsize': 14,      # 纵坐标刻度字号
-    'legend.fontsize': 12,      # 图例字号
-    'font.weight': 'bold',      # 所有文字加粗（包含刻度）
+    'font.size': 14,            
+    'axes.labelsize': 18,      
+    'axes.labelweight': 'bold', 
+    'axes.titlesize': 18,      
+    'xtick.labelsize': 14,      
+    'ytick.labelsize': 14,     
+    'legend.fontsize': 12,      
+    'font.weight': 'bold',      
 })
 import tqdm
 # from brokenaxes import brokenaxes
